@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>navaratne.uk</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+      }
+
+      body {
+        position: fixed;
+        inset: 0;
+      }
+
+      video {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="background-video" autoplay muted loop playsinline preload="auto">
+      <source src="static/bkg.mp4" type="video/mp4">
+    </video>
+    <script>
+      const video = document.getElementById('background-video');
+
+      video.play().catch(() => {
+        video.addEventListener('canplay', () => video.play(), { once: true });
+      });
+    </script>
+  </body>
+</html>
