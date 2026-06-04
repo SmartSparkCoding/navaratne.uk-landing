@@ -4,131 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>navaratne.uk</title>
-    <style>
-      :root {
-        --color-bg: #0a0a0a;
-        --color-text-main: #ffffff;
-        --color-text-grey: #8a8a8a;
-        --color-border: #262626;
-      }
-
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background-color: var(--color-bg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      /* Animated Ambient Background */
-      .bg-container {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-        overflow: hidden;
-        background: radial-gradient(circle at center, #121212 0%, #050505 100%);
-      }
-
-      .ambient-orb {
-        position: absolute;
-        border-radius: 50%;
-        filter: blur(80px);
-        opacity: 0.15;
-        animation: drift 25s infinite alternate ease-in-out;
-      }
-
-      .orb-1 {
-        width: 500px;
-        height: 500px;
-        background: #ffffff;
-        top: -10%;
-        left: 15%;
-      }
-
-      .orb-2 {
-        width: 600px;
-        height: 600px;
-        background: #4a4a4a;
-        bottom: -20%;
-        right: 10%;
-        animation-delay: -7s;
-        animation-duration: 30s;
-      }
-
-      @keyframes drift {
-        0% {
-          transform: translate(0, 0) scale(1);
-        }
-        50% {
-          transform: translate(80px, -50px) scale(1.1);
-        }
-        100% {
-          transform: translate(-40px, 60px) scale(0.9);
-        }
-      }
-
-      /* Foreground Content */
-      .content {
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        animation: fadeIn 1.2s ease-out;
-      }
-
-      h1 {
-        font-size: 4.5rem;
-        font-weight: 800;
-        margin: 0 0 1.5rem 0;
-        letter-spacing: -0.05em;
-        color: var(--color-text-main);
-      }
-
-      button {
-        background-color: rgba(255, 255, 255, 0.02);
-        color: var(--color-text-grey);
-        border: 1px solid var(--color-border);
-        padding: 0.8rem 2.2rem;
-        font-size: 0.95rem;
-        font-weight: 550;
-        letter-spacing: 0.05em;
-        border-radius: 9999px;
-        cursor: pointer;
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-
-      button:hover {
-        color: var(--color-text-main);
-        border-color: var(--color-text-main);
-        background-color: rgba(255, 255, 255, 0.1);
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="bg-container">
-      <div class="ambient-orb orb-1"></div>
-      <div class="ambient-orb orb-2"></div>
-    </div>
-    <div class="content">
-      <h1>Welcome</h1>
-      <button>Websites</button>
-    </div>
+    <!-- Interactive Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Main Scroll Container -->
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>navaratne.uk</h1>
+          <p class="subtitle">Welcome to my space</p>
+          <button id="scroll-trigger">Explore Websites</button>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio-section">
+        <h2 class="section-title">Websites</h2>
+        <div class="grid" id="grid">
+          <!-- Dynamic cards injected here by app.js -->
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
   </body>
 </html>
