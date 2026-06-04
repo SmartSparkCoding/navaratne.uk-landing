@@ -1,23 +1,28 @@
 // Add or edit your sites here. Keep it clean!
 export const websites = [
   {
-    name: "Project Zero",
-    description: "An elegant, minimal markdown editor for the web.",
-    url: "https://zero.navaratne.uk"
+    name: "Personal Website",
+    description: "Modern Personal Website for Jacob, using a simple static setup.",
+    url: "https://jacob.navaratne.uk"
   },
   {
-    name: "Terminal",
-    description: "A retro-future CLI interface built in HTML5 canvas.",
-    url: "https://cli.navaratne.uk"
+    name: "Snack Sense",
+    description: "A website made to help you find snacks! Submitted to Hack Club!",
+    url: "https://snacksense.navaratne.uk"
   },
   {
-    name: "Scribe",
-    description: "A fast, lightweight static site generator.",
-    url: "https://scribe.navaratne.uk"
+    name: "Rewards Tracker",
+    description: "Created for and by Jacob and submitted to Flavortown, Hack Club to help track commendations!",
+    urk: "https://rewards.navaratne.uk"
   },
   {
-    name: "Aether",
-    description: "Synthesized audio playground using WebAudio API.",
-    url: "https://aether.navaratne.uk"
+    name: "AS Updates",
+    description: "By Jacob and Felix to help others keep up to date with their menus, timetable and more with daily emails!",
+    url: "https://asupdates.mini-jacob.hackclub.app"
+  },
+  {
+    name: "AS Club Tracker",
+    description: "Helps Jacob keep track for his club, including HCB, attendance and more. Submitted to Macondo, Hack Club.",
+    url: "https://asclub.dino.icu/"
   }
 ];
