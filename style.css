@@ -138,3 +138,21 @@ button:hover {
   line-height: 1.5;
   font-size: 0.95rem;
 }
+
+/* 1. Tell the container to snap vertically */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  scroll-snap-type: y mandatory; /* Force vertical snapping */
+}
+
+/* 2. Tell the sections where to lock */
+.hero {
+  height: 100vh;
+  scroll-snap-align: start; /* Locks right at the top */
+}
+
+.portfolio {
+  min-height: 100vh; /* Ensure it takes at least the full screen */
+  scroll-snap-align: start; /* Locks right at the top */
+}
