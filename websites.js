@@ -13,7 +13,7 @@ export const websites = [
   {
     name: "Rewards Tracker",
     description: "Created for and by Jacob and submitted to Flavortown, Hack Club to help track commendations!",
-    urk: "https://rewards.navaratne.uk"
+    url: "https://rewards.navaratne.uk"
   },
   {
     name: "AS Updates",
