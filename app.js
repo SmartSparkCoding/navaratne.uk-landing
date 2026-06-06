@@ -29,9 +29,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.card, .trust-card').forEach(card => observer.observe(card));
+document.querySelectorAll('.card').forEach(card => observer.observe(card));
 
-// 4. Gold Dot Background
+// 4. Kinetic Mesh Waves (HTML Canvas Background)
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -61,9 +61,11 @@ function draw() {
   ctx.fillStyle = 'rgba(7, 7, 7, 1)';
   ctx.fillRect(0, 0, width, height);
 
+  // Drawing interconnecting sleek lines
   for (let i = 0; i < particleCount; i++) {
     const p1 = particles[i];
-
+    
+    // Smooth particles movement update
     p1.x += p1.vx;
     p1.y += p1.vy;
 
@@ -72,7 +74,7 @@ function draw() {
 
     ctx.beginPath();
     ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(216, 185, 107, 0.55)';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
     ctx.fill();
 
     for (let j = i + 1; j < particleCount; j++) {
@@ -81,17 +83,17 @@ function draw() {
       const dy = p1.y - p2.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
 
+      // Max line trigger limit
       if (dist < 150) {
         ctx.beginPath();
         ctx.moveTo(p1.x, p1.y);
         ctx.lineTo(p2.x, p2.y);
-        ctx.strokeStyle = `rgba(216, 185, 107, ${0.085 * (1 - dist / 150)})`;
+        ctx.strokeStyle = `rgba(255, 255, 255, ${0.07 * (1 - dist / 150)})`;
         ctx.lineWidth = 0.8;
         ctx.stroke();
       }
     }
   }
-
   requestAnimationFrame(draw);
 }
 
