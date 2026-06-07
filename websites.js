@@ -29,5 +29,10 @@ export const websites = [
     name: "Revision Sheet Line, by Jacob Navaratne",
     description: "A simple, no login, download site for Jacob's Revision resources. Free. Forever.",
     url: "https://revision.navaratne.uk/"
+  },
+  {
+    name: "Jacob's Game Centre",
+    description: "A Game Centre, based off basic HTML. Hosts games using HTML, exported from things like Scratch.",
+    url: "https://maths.navaratne.uk/"
   }
 ];
