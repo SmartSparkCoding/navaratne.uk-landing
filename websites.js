@@ -39,5 +39,10 @@ export const websites = [
     name: "Jacob's Recipes",
     description: "Sadly, vibe coded, but used by Jacob to store recipes and share them with others.",
     url: "https://recipes.navaratne.uk"
+  },
+  {
+    name: "Personal Home Assistant",
+    description: "Live Home Assistant Access, without using Tailscale VPN. Routed using the 'Cloudflared' App on Home Assistant. Login NOT available to the public",
+    url: "https://ha.navaratne.uk/"
   }
 ];
