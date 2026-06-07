@@ -24,5 +24,10 @@ export const websites = [
     name: "AS Club Tracker",
     description: "Helps Jacob keep track for his club, including HCB, attendance and more. Submitted to Macondo, Hack Club.",
     url: "https://asclub.dino.icu/"
+  },
+  {
+    name: "Revision Sheet Line, by Jacob Navaratne",
+    description: "A simple, no login, download site for Jacob's Revision resources. Free. Forever.",
+    url: "https://revision.navaratne.uk/"
   }
 ];
