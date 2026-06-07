@@ -34,5 +34,10 @@ export const websites = [
     name: "Jacob's Game Centre",
     description: "A Game Centre, based off basic HTML. Hosts games using HTML, exported from things like Scratch.",
     url: "https://maths.navaratne.uk/"
+  },
+  {
+    name: "Jacob's Recipes",
+    description: "Sadly, vibe coded, but used by Jacob to store recipes and share them with others.",
+    url: "https://recipes.navaratne.uk"
   }
 ];
