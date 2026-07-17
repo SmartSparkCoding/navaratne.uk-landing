@@ -44,5 +44,10 @@ export const websites = [
     name: "Personal Home Assistant",
     description: "Live Home Assistant Access, without using Tailscale VPN. Routed using the 'Cloudflared' App on Home Assistant. Login NOT available to the public",
     url: "https://ha.navaratne.uk/"
+  },
+  {
+    name: "Trip Chooser",
+    description: "A single-use tool for my family to decide where to go for a trip / day out!",
+    url: "https://trip.navaratne.uk/"
   }
 ];
