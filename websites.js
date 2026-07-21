@@ -49,5 +49,10 @@ export const websites = [
     name: "Trip Chooser",
     description: "A single-use tool for my family to decide where to go for a trip / day out!",
     url: "https://trip.navaratne.uk/"
+  },
+  {
+    name: "Bragging Rights",
+    description: "A web app allowing families (my family) to track our board games!",
+    url: "https://braggingrights.mini-jacob.hackclub.app/"
   }
 ];
