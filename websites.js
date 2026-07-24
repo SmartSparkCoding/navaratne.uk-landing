@@ -1,8 +1,7 @@
-// Add or edit your sites here. Keep it clean!
 export const websites = [
   {
     name: "Personal Website",
-    description: "Modern Personal Website for Jacob, using a simple static setup.",
+    description: "Modern Personal Website for Jacob, using a simple setup.",
     url: "https://jacob.navaratne.uk"
   },
   {
@@ -26,11 +25,6 @@ export const websites = [
     url: "https://asclub.dino.icu/"
   },
   {
-    name: "Revision Sheet Line, by Jacob Navaratne",
-    description: "A simple, no login, download site for Jacob's Revision resources. Free. Forever.",
-    url: "https://revision.navaratne.uk/"
-  },
-  {
     name: "Jacob's Game Centre",
     description: "A Game Centre, based off basic HTML. Hosts games using HTML, exported from things like Scratch.",
     url: "https://maths.navaratne.uk/"
@@ -44,11 +38,6 @@ export const websites = [
     name: "Personal Home Assistant",
     description: "Live Home Assistant Access, without using Tailscale VPN. Routed using the 'Cloudflared' App on Home Assistant. Login NOT available to the public",
     url: "https://ha.navaratne.uk/"
-  },
-  {
-    name: "Trip Chooser",
-    description: "A single-use tool for my family to decide where to go for a trip / day out!",
-    url: "https://trip.navaratne.uk/"
   },
   {
     name: "Bragging Rights",
