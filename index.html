@@ -1,82 +1,280 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
+    <title>navaratne.uk — everything Jacob has built</title>
+    <meta name="description" content="A directory of the sites and tools Jacob Navaratne has built: school projects, Hack Club apps, desktop downloads and small things made for family.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f4ed" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141310" media="(prefers-color-scheme: dark)">
+    <link rel="canonical" href="https://navaratne.uk/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="navaratne.uk">
+    <meta property="og:description" content="Every site, tool and download Jacob Navaratne has put on the internet, in one place.">
+    <meta property="og:url" content="https://navaratne.uk/">
+
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://jacob.navaratne.uk/#person",
-
-  "name": "Jacob Navaratne",
-
-  "url": "https://jacob.navaratne.uk/",
-
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://jacob.navaratne.uk/"
-  },
-
-  "description": "Student, developer and technology enthusiast interested in programming, artificial intelligence, web development and technology projects.",
-
-  "image": "https://jacob.navaratne.uk/profile.jpg",
-
-  "knowsAbout": [
-    "Technology",
-    "Programming",
-    "Software Development",
-    "Web Development",
-    "Artificial Intelligence",
-    "Computer Science",
-    "Cybersecurity",
-    "Home Automation",
-    "Apple Ecosystem",
-    "Smart Home Technology"
-  ],
-
-  "sameAs": [
-    "https://github.com/SmartSparkCoding/",
-    "https://www.instagram.com/jacob.navaratne",
-    "https://navaratne.uk/",
-    "https://youtube.com/@chaosgaming00",
-    "https://scrapbook.hackclub.com/Jacob%20Navaratne",
-    "https://hackati.me/JacobNavaratne"
-  ],
-
-  "subjectOf": [
-    {
-      "@type": "WebSite",
-      "url": "https://navaratne.uk/"
-    }
-  ]
-}
-</script>
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://navaratne.uk/#jacob",
+            "name": "Jacob Navaratne",
+            "url": "https://jacob.navaratne.uk/",
+            "jobTitle": "Student and developer",
+            "homeLocation": { "@type": "Place", "name": "Kent, England" },
+            "sameAs": [
+              "https://github.com/SmartSparkCoding",
+              "https://scrapbook.hackclub.com/Jacob%20Navaratne"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://navaratne.uk/",
+            "name": "navaratne.uk",
+            "url": "https://navaratne.uk/",
+            "description": "A directory of sites and tools built by Jacob Navaratne.",
+            "author": { "@id": "https://navaratne.uk/#jacob" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <!-- Interactive Background -->
-    <canvas id="bg-canvas"></canvas>
+    <div class="wrap">
+      <header class="masthead">
+        <p class="wordmark">navaratne.uk</p>
+        <p class="where">Jacob Navaratne &middot; Kent, England</p>
+      </header>
 
-    <!-- Main Scroll Container -->
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>navaratne.uk</h1>
-          <p class="subtitle">Welcome to my space</p>
-          <button id="scroll-trigger">Explore Websites</button>
+      <main>
+        <section class="intro">
+          <p class="kicker">Index</p>
+          <h1>Small things I&rsquo;ve built, all on one domain.</h1>
+          <p class="lede">
+            I&rsquo;m a student who makes websites and tools for school, for Hack Club,
+            and for problems that were annoying me enough to fix. Everything below is
+            public. Pick something and have a look.
+          </p>
+        </section>
+
+        <section class="group" aria-labelledby="g-start">
+          <h2 id="g-start"><span class="num">01</span> Start here</h2>
+          <ul>
+            <li>
+              <a class="row" href="https://jacob.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">My personal site</span>
+                  <span class="row-domain">jacob.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Who I am, what I&rsquo;m working on, and the projects I&rsquo;d actually show someone.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://overlay.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Huddle Overlay <span class="tag">Download</span></span>
+                  <span class="row-domain">overlay.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Your Slack huddle thread in a small floating window, on top of everything else. macOS and Windows, runs locally.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://drawingsgone.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">DrawingsGone <span class="tag">Download</span></span>
+                  <span class="row-domain">drawingsgone.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Share your screen without the pen marks on it. Keeps an annotation layer out of what other people can see.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="group" aria-labelledby="g-school">
+          <h2 id="g-school"><span class="num">02</span> School &amp; study</h2>
+          <ul>
+            <li>
+              <a class="row" href="https://revision.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Revision Sheet Line</span>
+                  <span class="row-domain">revision.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Topic-by-topic revision sheets, laid out one after another so nothing gets lost.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://rewards.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Commendation Tracker</span>
+                  <span class="row-domain">rewards.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Keeps a running count of school commendations so I stop trying to remember them.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://edu.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Edu Apps</span>
+                  <span class="row-domain">edu.navaratne.uk</span>
+                </span>
+                <span class="row-desc">A small collection of study tools and lesson helpers, in one place.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://aic.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">An Inspector Calls quotes</span>
+                  <span class="row-domain">aic.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Searchable quotes from the play, sorted by act and character, for essays and last-minute revision.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://cluedo.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Cluedo Sheets</span>
+                  <span class="row-domain">cluedo.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Old-school detective notes: cross off suspects, weapons and rooms. Saves in your browser, exports to a file.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://pfa.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Christmas Fair 2026</span>
+                  <span class="row-domain">pfa.navaratne.uk</span>
+                </span>
+                <span class="row-desc">The Ashford School PFA fair: stalls, Santa&rsquo;s Grotto and rides, Sunday 29 November at Ashford Prep School.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="group" aria-labelledby="g-hackclub">
+          <h2 id="g-hackclub"><span class="num">03</span> Hack Club</h2>
+          <ul>
+            <li>
+              <a class="row" href="https://jacobxhc.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Jacob &times; Hack Club</span>
+                  <span class="row-domain">jacobxhc.navaratne.uk</span>
+                </span>
+                <span class="row-desc">What I&rsquo;ve shipped and what I&rsquo;m taking part in, written up rather than listed.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://hackclub.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Hack Club Tracker</span>
+                  <span class="row-domain">hackclub.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Shipments, donations and event types for the clubs I run, in one dashboard.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://feedback.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Bento feedback</span>
+                  <span class="row-domain">feedback.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Every reply to the Bento feedback form: categorised themes, the numbers, a globe of where builders are, and every quote.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://asteria.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Asteria</span>
+                  <span class="row-domain">asteria.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Live dashboard for a huddle bot: sessions running now, uptime and the leaderboard.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="group" aria-labelledby="g-other">
+          <h2 id="g-other"><span class="num">04</span> Days out, food &amp; games</h2>
+          <ul>
+            <li>
+              <a class="row" href="https://trip.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Days out near Great Chart</span>
+                  <span class="row-domain">trip.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Accessible family days out, compared side by side so we can pick one without an argument.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://london-trip.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Tower of London by train</span>
+                  <span class="row-domain">london-trip.navaratne.uk</span>
+                </span>
+                <span class="row-desc">One day, four people, Ashford International to the Tower: train times, ticket prices, an itinerary and a printable plan.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://recipes.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Recipes</span>
+                  <span class="row-domain">recipes.navaratne.uk</span>
+                </span>
+                <span class="row-desc">The things I cook, written down properly so I can cook them again.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://snacksense.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Snack Sense</span>
+                  <span class="row-domain">snacksense.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Suggests a snack based on what you actually feel like eating. Built for a Hack Club challenge.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://maths.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">Fun Centre</span>
+                  <span class="row-domain">maths.navaratne.uk</span>
+                </span>
+                <span class="row-desc">A pile of browser games, mostly made to fill a free period.</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://pr.jacob.navaratne.uk/">
+                <span class="row-head">
+                  <span class="row-title">PR Tracker</span>
+                  <span class="row-domain">pr.jacob.navaratne.uk</span>
+                </span>
+                <span class="row-desc">Every pull request I&rsquo;ve opened across GitHub, with its state. Mostly so I don&rsquo;t forget the open ones.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-main">
+          <p class="footer-note">
+            Written and maintained by Jacob Navaratne. If something is broken,
+            <a href="https://jacob.navaratne.uk/">tell me on my site</a>.
+          </p>
+          <p class="footer-links">
+            <a href="https://github.com/SmartSparkCoding">GitHub</a>
+            <a href="https://hackclub.com/">Hack Club</a>
+            <a href="https://jacob.navaratne.uk/">jacob.navaratne.uk</a>
+          </p>
         </div>
-      </section>
-
-      <section class="portfolio" id="portfolio-section">
-        <h2 class="section-title">Websites</h2>
-        <div class="grid" id="grid">
-          <!-- Dynamic cards injected here by app.js -->
-        </div>
-      </section>
-    </main>
-
-    <script type="module" src="app.js"></script>
+        <p class="colophon">
+          Hand-written HTML and CSS. No frameworks, no analytics, no cookies.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
